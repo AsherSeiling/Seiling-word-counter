@@ -18,7 +18,6 @@ function main(){
         if (words.charAt(num) == " "){
             parsed_words.push(buffer);
             buffer = "";
-            console.log("space");
         }
         else if (words.charAt(num) == "."){
             if (words[num + 1] != " "){
@@ -47,11 +46,13 @@ function main(){
     for (let chars in parsed_words){
         if (parsed_words[chars] == word_find){
             num_occurr += 1;
-            console.log(num_occurr);
-        }
-    }
+        };
+    };
+
+    place_data();
 }
 
 function place_data(){
-
+    document.getElementById("word_out").innerHTML = "Word: " + word_find;
+    document.getElementById("occurrence_out").innerHTML = "Occurrences: " + num_occurr;
 }
