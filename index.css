@@ -32,3 +32,10 @@ textarea {
     border-radius: 5pt;
     border: 2pt solid rgb(13, 0, 201);
 }
+.word_to_find {
+
+}
+.word_to_find input {
+    border-radius: 3pt;
+    border: 2pt solid black;
+}
