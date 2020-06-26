@@ -55,9 +55,8 @@ function main(){
 }
 
 function place_data(){
+    let words_count = parsed_words.length;
     document.getElementById("word_out").innerHTML = "Word: " + word_find;
     document.getElementById("occurrence_out").innerHTML = "Occurrences: " + num_occurr;
+    document.getElementById("words_out").innerHTML = "Word Count: " + words_count.toString();
 }
-
-
-
