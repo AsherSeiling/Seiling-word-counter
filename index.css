@@ -42,7 +42,7 @@ button {
     border-radius: 10pt;
 }
 
-button:hover {
+.main button:hover {
     color: rgb(204, 204, 204);
     background-color: rgb(1, 116, 35);
     border-color: rgb(1, 116, 35);

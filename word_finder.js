@@ -10,8 +10,10 @@ var words;
 var words_find;
 
 function main(){
-    words = document.getElementById("sentance").value;
-    word_find = document.getElementById("search_word").value;
+    let words_get = document.getElementById("sentance").value;
+    let word_find_get = document.getElementById("search_word").value;
+    words = words_get.toLowerCase();
+    word_find = word_find_get.toLowerCase();
     let num = 0;
     let char = "";
     for (char in words){
@@ -41,8 +43,8 @@ function main(){
             buffer += words.charAt(num);
         };
         num += 1;
-    }
-
+    };
+    parsed_words.push(buffer);
     for (let chars in parsed_words){
         if (parsed_words[chars] == word_find){
             num_occurr += 1;
@@ -56,3 +58,6 @@ function place_data(){
     document.getElementById("word_out").innerHTML = "Word: " + word_find;
     document.getElementById("occurrence_out").innerHTML = "Occurrences: " + num_occurr;
 }
+
+
+
