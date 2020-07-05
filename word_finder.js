@@ -1,4 +1,4 @@
-// 2020 Seiling Enterprises
+// 2020 Asher Seiling
 
 var parsed_words = [];
 
